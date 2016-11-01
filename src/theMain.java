@@ -1,15 +1,18 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * Created by Antoniu on 27-Oct-16.
  */
 public class theMain {
-    private static ArrayList<FoodUnit> fUnits= new ArrayList<FoodUnit>();
-    private static ArrayList<Cell> cells = new ArrayList<>();
-    private static final int startingFoodNo = 10;
-    private static final int startingAsexNo = 15;
-    private static final int startingSexNo = 10;
+    private static List<FoodUnit> fUnits= Collections.synchronizedList(new ArrayList<FoodUnit>());
+    private static List<Cell> cells = Collections.synchronizedList(new ArrayList<Cell>());
+    private static final int startingFoodNo = 22;
+    private static final int startingAsexNo = 0;
+    private static final int startingSexNo = 2;
 
 
     public static void main(String args[]) {
