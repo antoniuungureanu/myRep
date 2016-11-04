@@ -10,9 +10,9 @@ import java.util.List;
 public class theMain {
     private static List<FoodUnit> fUnits= Collections.synchronizedList(new ArrayList<FoodUnit>());
     private static List<Cell> cells = Collections.synchronizedList(new ArrayList<Cell>());
-    private static final int startingFoodNo = 22;
-    private static final int startingAsexNo = 0;
-    private static final int startingSexNo = 2;
+    private static final int startingFoodNo = 190;
+    private static final int startingAsexNo = 7;
+    private static final int startingSexNo = 8;
 
 
     public static void main(String args[]) {

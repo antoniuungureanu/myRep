@@ -31,7 +31,7 @@ public abstract class Cell implements Runnable{
         for(FoodUnit f : food) {
             try {
                 if (f.eatFood()) {
-                    System.out.println(this.toString() + " cell ate");
+                    //System.out.println(this.toString() + " cell ate");
                     if(feedingCycles >= 10)
                         state = States.Horny;
                     else
@@ -139,7 +139,7 @@ public abstract class Cell implements Runnable{
                     if (deltaTime < tFull * 100 && feedingCycles >= 10) {
                         reproduce();
                     } else {
-                        System.out.println(this.toString() + " cell is Horny no more");
+                        System.out.println(this.toString() + " I got hungry from Horny");
                         state = States.Hungry;
                         startTime = System.currentTimeMillis();
                     }
